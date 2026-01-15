@@ -3,7 +3,7 @@ using UnityEngine.Video;
 using System.Collections;
 using System.Collections.Generic;
 
-public class NewMonoBehaviourScript : MonoBehaviour
+public class VidPlayer : MonoBehaviour
 {
     [SerializeField] private string videoUrl = "https://mazelya.github.io/VideoHost/videoplayback.mp4";
     private VideoPlayer videoPlayer;
