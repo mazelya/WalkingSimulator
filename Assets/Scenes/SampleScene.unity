@@ -349,7 +349,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22b7daf4e1c743c4fa0f81a3311633ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  VideoUrl: https://mazelya.github.io/VideoHostPortfolio/MarioKart.mp4
+  VideoUrl: 
   volume: 0.5
 --- !u!328 &66281025
 VideoPlayer:
@@ -507,7 +507,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22b7daf4e1c743c4fa0f81a3311633ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  VideoUrl: https://mazelya.github.io/VideoHostPortfolio/MarioKart.mp4
+  VideoUrl: 
   volume: 0.5
 --- !u!328 &156003474
 VideoPlayer:
@@ -1283,13 +1283,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 280190643}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.0006942572, y: 0.9926937, z: -0.120524116, w: 0.005718231}
-  m_LocalPosition: {x: 6.181998, y: -8.87, z: -16.378029}
+  m_LocalRotation: {x: -0.11940241, y: 0.1352418, z: -0.016419869, w: -0.9834547}
+  m_LocalPosition: {x: 33.182, y: -8.87, z: -51.37803}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 13.845, y: 179.34, z: 0}
+  m_LocalEulerAnglesHint: {x: 13.845, y: 344.34, z: 0}
 --- !u!1 &285220712
 GameObject:
   m_ObjectHideFlags: 0
@@ -1679,7 +1679,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22b7daf4e1c743c4fa0f81a3311633ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  VideoUrl: https://mazelya.github.io/VideoHostPortfolio/MarioKart.mp4
+  VideoUrl: 
   volume: 0.5
 --- !u!328 &329572480
 VideoPlayer:
@@ -2664,7 +2664,7 @@ Transform:
   m_GameObject: {fileID: 654658272}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 21, y: -9.307, z: -66}
+  m_LocalPosition: {x: 23.14, y: -9.311994, z: -65.47}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3128,15 +3128,15 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 790108407}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.99998343, z: -0, w: 0.005760222}
-  m_LocalPosition: {x: 6.181998, y: -10.245, z: -16.378029}
+  m_LocalRotation: {x: -0, y: 0.13623494, z: -0, w: -0.99067664}
+  m_LocalPosition: {x: 33.182, y: -10.245, z: -51.37803}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 580060847}
   - {fileID: 206534914}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 179.34, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 344.34, z: 0}
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
@@ -3339,7 +3339,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22b7daf4e1c743c4fa0f81a3311633ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  VideoUrl: https://mazelya.github.io/VideoHostPortfolio/MarioKart.mp4
+  VideoUrl: 
   volume: 0.5
 --- !u!328 &1011074401
 VideoPlayer:
@@ -3408,7 +3408,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22b7daf4e1c743c4fa0f81a3311633ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  VideoUrl: https://mazelya.github.io/VideoHostPortfolio/MarioKart.mp4
+  VideoUrl: 
   volume: 0.5
 --- !u!328 &1018567855
 VideoPlayer:
@@ -4021,6 +4021,67 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &1150679865 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: a4e3c615ef6713f45971bc83810ca31d, type: 3}
+  m_PrefabInstance: {fileID: 1745808388}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1150679866
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1150679865}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.041618034, y: 0.04161803, z: 0.00570322}
+  m_Center: {x: 0, y: 2.7745136e-16, z: -0.07439157}
+--- !u!114 &1150679870
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1150679865}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc38294a49292dc44813a8ee2b875637, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  liftDistance: 3.8
+  liftSpeed: 1.5
+--- !u!65 &1150679871
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1150679865}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.041618034, y: 0.041618027, z: 0.09034487}
+  m_Center: {x: 0, y: 0, z: -0.032070678}
 --- !u!1 &1181888697
 GameObject:
   m_ObjectHideFlags: 0
@@ -5100,7 +5161,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22b7daf4e1c743c4fa0f81a3311633ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  VideoUrl: https://mazelya.github.io/VideoHost/videoMurPise.mp4
+  VideoUrl: 
   volume: 0.5
 --- !u!328 &1443503924
 VideoPlayer:
@@ -5465,6 +5526,75 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1594415986}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1001 &1598875140
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: ffbcd991393ffd04fa95adddeffd9680, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.77018
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ffbcd991393ffd04fa95adddeffd9680, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.77018
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ffbcd991393ffd04fa95adddeffd9680, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.77018
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ffbcd991393ffd04fa95adddeffd9680, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 57.668137
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ffbcd991393ffd04fa95adddeffd9680, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 6.509367
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ffbcd991393ffd04fa95adddeffd9680, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -96.3747
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ffbcd991393ffd04fa95adddeffd9680, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ffbcd991393ffd04fa95adddeffd9680, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ffbcd991393ffd04fa95adddeffd9680, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.70710677
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ffbcd991393ffd04fa95adddeffd9680, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ffbcd991393ffd04fa95adddeffd9680, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ffbcd991393ffd04fa95adddeffd9680, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ffbcd991393ffd04fa95adddeffd9680, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ffbcd991393ffd04fa95adddeffd9680, type: 3}
+      propertyPath: m_Name
+      value: "Ballon_\xE9olienne"
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ffbcd991393ffd04fa95adddeffd9680, type: 3}
 --- !u!1 &1624878474
 GameObject:
   m_ObjectHideFlags: 0
@@ -5735,14 +5865,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1686746132}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6.181998, y: -8.87, z: -16.378029}
+  m_LocalRotation: {x: -0, y: 0.9914449, z: -0, w: 0.13052607}
+  m_LocalPosition: {x: 33.182, y: -8.87, z: -51.37803}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 36187303}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 165, z: 0}
 --- !u!1 &1692271049
 GameObject:
   m_ObjectHideFlags: 0
@@ -5960,6 +6090,84 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1725218714}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1001 &1745808388
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: a4e3c615ef6713f45971bc83810ca31d, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 75.97
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a4e3c615ef6713f45971bc83810ca31d, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 75.97
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a4e3c615ef6713f45971bc83810ca31d, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 39.445408
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a4e3c615ef6713f45971bc83810ca31d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 32.160896
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a4e3c615ef6713f45971bc83810ca31d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -7.3999996
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a4e3c615ef6713f45971bc83810ca31d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -43.69
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a4e3c615ef6713f45971bc83810ca31d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071067
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a4e3c615ef6713f45971bc83810ca31d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a4e3c615ef6713f45971bc83810ca31d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a4e3c615ef6713f45971bc83810ca31d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a4e3c615ef6713f45971bc83810ca31d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a4e3c615ef6713f45971bc83810ca31d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a4e3c615ef6713f45971bc83810ca31d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a4e3c615ef6713f45971bc83810ca31d, type: 3}
+      propertyPath: m_Name
+      value: Drone
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: a4e3c615ef6713f45971bc83810ca31d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1150679866}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: a4e3c615ef6713f45971bc83810ca31d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1150679871}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: a4e3c615ef6713f45971bc83810ca31d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1150679870}
+  m_SourcePrefab: {fileID: 100100000, guid: a4e3c615ef6713f45971bc83810ca31d, type: 3}
 --- !u!1 &1764849545
 GameObject:
   m_ObjectHideFlags: 0
@@ -6233,7 +6441,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22b7daf4e1c743c4fa0f81a3311633ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  VideoUrl: https://mazelya.github.io/VideoHostPortfolio/MarioKart.mp4
+  VideoUrl: 
   volume: 0.5
 --- !u!328 &1824049185
 VideoPlayer:
@@ -286954,3 +287162,5 @@ SceneRoots:
   - {fileID: 1138125258}
   - {fileID: 753271570}
   - {fileID: 790108413}
+  - {fileID: 1598875140}
+  - {fileID: 1745808388}
