@@ -1,17 +1,39 @@
 using UnityEngine;
+using UnityEngine.UI; // Nécessaire pour le composant Image
 using TMPro;
 using StarterAssets;
+
+// Structure pour configurer chaque réplique
+[System.Serializable]
+public enum Speaker { Player, NPC }
+
+[System.Serializable]
+public class DialogueLine
+{
+    public Speaker speaker;
+    [TextArea(2, 5)]
+    public string text;
+}
 
 public class DialogueManager : MonoBehaviour
 {
     public static DialogueManager Instance;
 
+    [Header("UI Components")]
     public GameObject dialogueBox;
+    public Image dialogueBackground;    // L'image de fond qui va changer
     public TextMeshProUGUI dialogueText;
+    public TextMeshProUGUI nameText;    // Le texte qui affichera le nom
+
+    [Header("Sprites (Images importées)")]
+    public Sprite playerBubbleSprite; // Ton image avec nom à droite
+    public Sprite npcBubbleSprite;    // Ton image avec nom à gauche
+
     public FirstPersonController playerMovement;
 
-    private string[] currentDialogues;
+    private DialogueLine[] currentLines;
     private int currentIndex = 0;
+    private string currentNpcName; // Stocke le nom du NPC actuel
 
     private void Awake()
     {
@@ -19,9 +41,10 @@ public class DialogueManager : MonoBehaviour
         dialogueBox.SetActive(false);
     }
 
-    public void ShowDialogue(string[] lines) // Reçoit un tableau de phrases
+    public void ShowDialogue(DialogueLine[] lines, string npcName)
     {
-        currentDialogues = lines;
+        currentLines = lines;
+        currentNpcName = npcName;
         currentIndex = 0;
 
         dialogueBox.SetActive(true);
@@ -32,8 +55,7 @@ public class DialogueManager : MonoBehaviour
     public void DisplayNextLine()
     {
         currentIndex++;
-
-        if (currentIndex < currentDialogues.Length)
+        if (currentIndex < currentLines.Length)
         {
             DisplayLine();
         }
@@ -45,7 +67,21 @@ public class DialogueManager : MonoBehaviour
 
     private void DisplayLine()
     {
-        dialogueText.text = currentDialogues[currentIndex];
+        DialogueLine line = currentLines[currentIndex];
+        dialogueText.text = line.text;
+
+        if (line.speaker == Speaker.Player)
+        {
+            dialogueBackground.sprite = playerBubbleSprite;
+            nameText.text = "Moi"; // Ou ton nom de joueur
+            nameText.alignment = TextAlignmentOptions.Right; // Aligne le nom à droite
+        }
+        else
+        {
+            dialogueBackground.sprite = npcBubbleSprite;
+            nameText.text = currentNpcName;
+            nameText.alignment = TextAlignmentOptions.Left; // Aligne le nom à gauche
+        }
     }
 
     public void HideDialogue()
