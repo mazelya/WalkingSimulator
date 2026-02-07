@@ -1,9 +1,8 @@
 using UnityEngine;
-using UnityEngine.UI; // Nécessaire pour le composant Image
+using UnityEngine.UI;
 using TMPro;
 using StarterAssets;
 
-// Structure pour configurer chaque réplique
 [System.Serializable]
 public enum Speaker { Player, NPC }
 
@@ -21,19 +20,26 @@ public class DialogueManager : MonoBehaviour
 
     [Header("UI Components")]
     public GameObject dialogueBox;
-    public Image dialogueBackground;    // L'image de fond qui va changer
+    public Image dialogueBackground;
     public TextMeshProUGUI dialogueText;
-    public TextMeshProUGUI nameText;    // Le texte qui affichera le nom
+
+    [Header("Texts de Nom (Séparés)")]
+    // Glisse ici les objets TextMeshPro qui sont placés à gauche et à droite
+    public GameObject playerDisplayNameObj;
+    public GameObject npcDisplayNameObj;
+
+    public TextMeshProUGUI playerNameText;
+    public TextMeshProUGUI npcNameText;
 
     [Header("Sprites (Images importées)")]
-    public Sprite playerBubbleSprite; // Ton image avec nom à droite
-    public Sprite npcBubbleSprite;    // Ton image avec nom à gauche
+    public Sprite playerBubbleSprite;
+    public Sprite npcBubbleSprite;
 
     public FirstPersonController playerMovement;
 
     private DialogueLine[] currentLines;
     private int currentIndex = 0;
-    private string currentNpcName; // Stocke le nom du NPC actuel
+    private string currentNpcName;
 
     private void Awake()
     {
@@ -72,15 +78,23 @@ public class DialogueManager : MonoBehaviour
 
         if (line.speaker == Speaker.Player)
         {
+            // Configuration Joueur
             dialogueBackground.sprite = playerBubbleSprite;
-            nameText.text = "Moi"; // Ou ton nom de joueur
-            nameText.alignment = TextAlignmentOptions.Right; // Aligne le nom à droite
+
+            playerDisplayNameObj.SetActive(true);
+            npcDisplayNameObj.SetActive(false);
+
+            playerNameText.text = "Moi";
         }
         else
         {
+            // Configuration NPC
             dialogueBackground.sprite = npcBubbleSprite;
-            nameText.text = currentNpcName;
-            nameText.alignment = TextAlignmentOptions.Left; // Aligne le nom à gauche
+
+            playerDisplayNameObj.SetActive(false);
+            npcDisplayNameObj.SetActive(true);
+
+            npcNameText.text = currentNpcName;
         }
     }
 
