@@ -45,7 +45,7 @@ public class OpenDoor : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Player") || other.CompareTag("Guide"))
         {
             targetPosition = openPosition;
             isMoving = true;
@@ -54,7 +54,7 @@ public class OpenDoor : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Player") || other.CompareTag("Guide"))
         {
             targetPosition = closedPosition;
             isMoving = true;

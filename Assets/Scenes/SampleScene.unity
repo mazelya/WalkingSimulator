@@ -195,6 +195,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6083440}
   m_CullTransparentMesh: 1
+--- !u!1 &28936960 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: af4603a606a1a444d95e503e982ba0b3, type: 3}
+  m_PrefabInstance: {fileID: 73161020}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &36187302
 GameObject:
   m_ObjectHideFlags: 3
@@ -282,6 +287,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0b09e7857660247b1477e93731de29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &39219129 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 3849df4b0bacda14d9c962d48b8bfac4, type: 3}
+  m_PrefabInstance: {fileID: 883846204}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &62064861 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: af4603a606a1a444d95e503e982ba0b3, type: 3}
+  m_PrefabInstance: {fileID: 592793028}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &65341015
 GameObject:
   m_ObjectHideFlags: 0
@@ -581,7 +596,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: af4603a606a1a444d95e503e982ba0b3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 517971165}
   m_SourcePrefab: {fileID: 100100000, guid: af4603a606a1a444d95e503e982ba0b3, type: 3}
 --- !u!1 &75190448
 GameObject:
@@ -910,6 +928,143 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 119041151}
   m_CullTransparentMesh: 1
+--- !u!1 &119273140
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 119273141}
+  - component: {fileID: 119273143}
+  - component: {fileID: 119273142}
+  m_Layer: 5
+  m_Name: DiscussionNumber
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &119273141
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 119273140}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 347926667}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 128.77817, y: 130.57507}
+  m_SizeDelta: {x: 200, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &119273142
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 119273140}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: New Text
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: fd48c14c34bcd684a8be4bf2197ca6f8, type: 2}
+  m_sharedMaterial: {fileID: 7599906577939596767, guid: fd48c14c34bcd684a8be4bf2197ca6f8, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 10
+  m_fontSizeBase: 10
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 4
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_characterHorizontalScale: 1
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_ActiveFontFeatures: 6e72656b
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &119273143
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 119273140}
+  m_CullTransparentMesh: 1
 --- !u!1 &156003470
 GameObject:
   m_ObjectHideFlags: 0
@@ -1015,6 +1170,11 @@ VideoPlayer:
   m_WaitForFirstFrame: 0
   m_FrameReadyEventEnabled: 0
   m_VideoShaders: []
+--- !u!1 &156113056 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: af4603a606a1a444d95e503e982ba0b3, type: 3}
+  m_PrefabInstance: {fileID: 1166843063}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &206534913
 GameObject:
   m_ObjectHideFlags: 0
@@ -1249,42 +1409,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96f4b8bb26f03a54ea4c6717cb38045f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  npcID: 
   npcName: Soren
-  conversation:
-  - speaker: 1
-    text: "Salut ! Toi ! Ne bouge pas ! Faut que je te montre mes b\xE9b\xE9s, mes
-      cr\xE9ations, j\u2019en ai des tonnes, des piles, des...  "
-  - speaker: 1
-    text: "Oh, tiens, regarde l\xE0-bas, Yori et Ignas qui s'\xE9tripent encore.
-      L'\xE9tincelle et la goutte d'eau, pr\xE9visible, totalement pr\xE9visible.
-      Bref !"
-  - speaker: 1
-    text: "Regarde \xE7a : un SHED ! Magnifique, non ? On dirait une dent de scie.
-      Une \xE9norme dent de squale ! Exactement comme celle que j\u2019ai utilis\xE9e
-      pour..."
-  - speaker: 1
-    text: "Enfin, pour l'exp\xE9rience sur l'amputation contr\xF4l\xE9e de mon bras,
-      mais c\u2019est un d\xE9tail, j'en ai un autre ! "
-  - speaker: 1
-    text: "Bref ! Le SHED fait entrer la lumi\xE8re naturelle par le toit, c\u2019est
-      r\xE9volutionnaire, c\u2019est... "
-  - speaker: 1
-    text: "Attends. Trop de lumens. Trop de lux ! La r\xE9fraction est catastrophique
-      ! Faut que je d\xE9monte tout, que je recalibre, que je transmute !"
-  - speaker: 1
-    text: "C'est n'importe quoi ! Mais qui est l'abruti qui a calcul\xE9 cet angle
-      ? "
-  - speaker: 1
-    text: "Ah... mince, je crois que c\u2019est moi."
-  - speaker: 1
-    text: "Chut... tu l\u2019as vu, l\xE0 ? Dans l'ombre ? Je savais qu\u2019il r\xF4dait.
-      Il nous observe, il compte nos battements de c\u0153ur, il..."
-  - speaker: 1
-    text: "C\u2019est Sylv personne ne l'aime ici, il sent la vieille for\xEAt et
-      les secrets oubli\xE9s. Tu veux lui parler ? Mauvaise id\xE9e. Tr\xE8s mauvaise. "
-  - speaker: 1
-    text: "Mais essaye ! Pour la science ! Je ne te promets pas que tu reviendras
-      avec tous tes membres, par contre... Bon, j'y vais, j'ai un toit \xE0 massacrer"
+  conversation: []
+  playOnlyOnce: 0
   rotationSpeed: 5
 --- !u!65 &209953629
 BoxCollider:
@@ -1496,16 +1624,16 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1053803777}
-  - {fileID: 2099547474}
-  - {fileID: 387760127}
   - {fileID: 777472375}
   - {fileID: 1388774079}
   - {fileID: 1435824818}
+  - {fileID: 1053803777}
+  - {fileID: 1594415987}
+  - {fileID: 2099547474}
+  - {fileID: 654658273}
+  - {fileID: 387760127}
   - {fileID: 209953624}
   - {fileID: 1522680799}
-  - {fileID: 654658273}
-  - {fileID: 1594415987}
   - {fileID: 442677502}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1582,6 +1710,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 3e01808cd50ffcf4f8ac612c43dad84c, type: 3}
       insertIndex: -1
       addedObject: {fileID: 269833310}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 3e01808cd50ffcf4f8ac612c43dad84c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 269833314}
   m_SourcePrefab: {fileID: 100100000, guid: 3e01808cd50ffcf4f8ac612c43dad84c, type: 3}
 --- !u!4 &269833305 stripped
 Transform:
@@ -1650,6 +1781,26 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.023879372, y: 0.040472075, z: 0.008204503}
   m_Center: {x: -0.009674497, y: -0.00009534955, z: 0.0041022473}
+--- !u!114 &269833314
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 269833306}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SerializedVersion: 0
+  m_OverrideArea: 1
+  m_Area: 0
+  m_OverrideGenerateLinks: 0
+  m_GenerateLinks: 0
+  m_IgnoreFromBuild: 0
+  m_ApplyToChildren: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &275846283
 GameObject:
   m_ObjectHideFlags: 0
@@ -2378,7 +2529,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 3849df4b0bacda14d9c962d48b8bfac4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1272256610}
   m_SourcePrefab: {fileID: 100100000, guid: 3849df4b0bacda14d9c962d48b8bfac4, type: 3}
 --- !u!1 &347926666
 GameObject:
@@ -2413,6 +2567,7 @@ RectTransform:
   - {fileID: 1611451450}
   - {fileID: 119041152}
   - {fileID: 78552073}
+  - {fileID: 119273141}
   m_Father: {fileID: 991966505}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -2623,6 +2778,27 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: af4603a606a1a444d95e503e982ba0b3, type: 3}
   m_PrefabInstance: {fileID: 592793028}
   m_PrefabAsset: {fileID: 0}
+--- !u!65 &364118421
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 62064861}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.8291296, y: 1.7440766, z: 1.5124573}
+  m_Center: {x: -0.14003372, y: 0.9130563, z: -0.04473734}
 --- !u!1 &387760126
 GameObject:
   m_ObjectHideFlags: 0
@@ -2768,31 +2944,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96f4b8bb26f03a54ea4c6717cb38045f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  npcID: 
   npcName: Kanoko
-  conversation:
-  - speaker: 1
-    text: "Je vois que tu as crois\xE9 le chemin de Treeny. Un c\u0153ur pur, mais
-      une langue bien trop agile pour son propre bien..."
-  - speaker: 0
-    text: "Oui, il m\u2019a parl\xE9 d'une \"destruction\", il me semble..."
-  - speaker: 1
-    text: "La jeunesse s'\xE9gare parfois dans les \xE9chos du pass\xE9. Mais ne
-      nous attardons pas sur les ruines. Regarde plut\xF4t autour de toi."
-  - speaker: 1
-    text: "Vois-tu ces panneaux solaires ? Ils sont comme l'\xE2me humaine : ils
-      ont soif de lumi\xE8re pour puiser leur force. Sans clart\xE9, nous ne sommes
-      que des ombres immobiles. "
-  - speaker: 1
-    text: "Parfois, le soleil est g\xE9n\xE9reux, et nous produisons plus que n\xE9cessaire.
-      Alors, nous offrons ce surplus \xE0 ceux qui nous entourent."
-  - speaker: 1
-    text: "Le partage est le seul v\xE9ritable ciment d'une civilisation. Il faut
-      savoir donner, m\xEAme \xE0 ceux qui ont tr\xE9buch\xE9, m\xEAme \xE0 ceux
-      qui ont commis des erreurs... autrefois."
-  - speaker: 1
-    text: "Le pardon est une racine qui permet \xE0 l'arbre de grandir malgr\xE9
-      la temp\xEAte. Retiens bien cela : la faute est humaine, mais le silence est
-      parfois la plus grande des sagesses."
+  conversation: []
+  playOnlyOnce: 0
   rotationSpeed: 5
 --- !u!1 &410087039
 GameObject:
@@ -3007,10 +3162,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96f4b8bb26f03a54ea4c6717cb38045f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  npcID: 
   npcName: Guide
-  conversation:
-  - speaker: 0
-    text: Salut
+  conversation: []
+  playOnlyOnce: 0
   rotationSpeed: 5
 --- !u!65 &442677504
 BoxCollider:
@@ -3167,6 +3322,32 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: af4603a606a1a444d95e503e982ba0b3, type: 3}
   m_PrefabInstance: {fileID: 73161020}
   m_PrefabAsset: {fileID: 0}
+--- !u!65 &517971165
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 28936960}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.8291296, y: 1.7440766, z: 1.5124573}
+  m_Center: {x: -0.14003372, y: 0.9130563, z: -0.04473734}
+--- !u!1 &556068403 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 3849df4b0bacda14d9c962d48b8bfac4, type: 3}
+  m_PrefabInstance: {fileID: 1968107788}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &580060846
 GameObject:
   m_ObjectHideFlags: 0
@@ -3274,7 +3455,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: af4603a606a1a444d95e503e982ba0b3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 364118421}
   m_SourcePrefab: {fileID: 100100000, guid: af4603a606a1a444d95e503e982ba0b3, type: 3}
 --- !u!1 &602994440
 GameObject:
@@ -3462,6 +3646,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 3e01808cd50ffcf4f8ac612c43dad84c, type: 3}
       insertIndex: -1
       addedObject: {fileID: 618100587}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 3e01808cd50ffcf4f8ac612c43dad84c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 618100591}
   m_SourcePrefab: {fileID: 100100000, guid: 3e01808cd50ffcf4f8ac612c43dad84c, type: 3}
 --- !u!4 &618100582 stripped
 Transform:
@@ -3530,6 +3717,26 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.023916544, y: 0.040499993, z: 0.008266466}
   m_Center: {x: 0.000273785, y: -0.00025003435, z: 0.0041332263}
+--- !u!114 &618100591
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 618100583}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SerializedVersion: 0
+  m_OverrideArea: 1
+  m_Area: 0
+  m_OverrideGenerateLinks: 0
+  m_GenerateLinks: 0
+  m_IgnoreFromBuild: 0
+  m_ApplyToChildren: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &634938733
 GameObject:
   m_ObjectHideFlags: 0
@@ -3740,31 +3947,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96f4b8bb26f03a54ea4c6717cb38045f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  npcID: 
   npcName: Treeny
-  conversation:
-  - speaker: 1
-    text: "Oh, salut ! Tu... tu regardes les murs ? Ce sont des ossatures en bois.
-      C\u2019est... c\u2019est bien le bois, tu sais ?"
-  - speaker: 1
-    text: "C'est beaucoup plus l\xE9ger que le b\xE9ton. Un peu comme nos vies avant
-      le Grand Changement de..."
-  - speaker: 1
-    text: "Oups. Hop. Rien ! J'ai rien dit ! Enfin, je veux dire... c'est tr\xE8s
-      pratique, le bois. Les d\xE9chets se recyclent, c'est propre. Et puis c'est
-      solide, \xE7a chauffe vite... "
-  - speaker: 1
-    text: "C'est s\xFBr qu'on en aurait bien eu besoin il y a quelques ann\xE9es,
-      juste avant la Destruc... la Destructi.."
-  - speaker: 1
-    text: "Euh... attends. Kanoko m'a dit... il m'a dit : \"Treeny, ne parle surtout
-      pas du pass\xE9, c'est un ordre\". Oh non, j'esp\xE8re que j'en ai pas trop
-      dit."
-  - speaker: 1
-    text: "S'il te pla\xEEt, ne lui r\xE9p\xE8te rien, il va encore me regarder avec
-      son air s\xE9v\xE8re et..."
-  - speaker: 1
-    text: "Et il ne sera pas gentil avec moi. Je suis pas dou\xE9 pour les secrets,
-      moi... tu me promets de te taire ?"
+  conversation: []
+  playOnlyOnce: 0
   rotationSpeed: 5
 --- !u!65 &654658278
 BoxCollider:
@@ -4016,7 +4202,7 @@ Transform:
   m_GameObject: {fileID: 777472374}
   serializedVersion: 2
   m_LocalRotation: {x: -0.70710707, y: -0, z: -0, w: 0.70710653}
-  m_LocalPosition: {x: 1, y: -10.26, z: -21}
+  m_LocalPosition: {x: 3, y: -10.259998, z: -19}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4055,25 +4241,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96f4b8bb26f03a54ea4c6717cb38045f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  npcID: 1
   npcName: Koha
   conversation:
+  - speaker: 1
+    text: Salut
   - speaker: 0
-    text: "Bienvenue entre les murs du b\xE2timent GGCD. Je suis Koha, le gardien
-      de ce lieu et de l'\xE9quilibre qui y r\xE8gne."
-  - speaker: 1
-    text: "Ici, nous cultivons l'harmonie, car chaque \xE9l\xE9ment, chaque esprit,
-      a sa place exacte dans la structure."
-  - speaker: 1
-    text: "Je vous encourage \xE0 aller \xE0 leur rencontre. \xC9coutez les murmures
-      d'Evys, supportez les \xE9clats d'Ignas..."
-  - speaker: 1
-    text: "Chaque esprit est une pi\xE8ce du puzzle. Si vous savez pr\xEAter l'oreille
-      \xE0 chacun d'entre eux, peut-\xEAtre alors la grande fresque de notre histoire
-      se d\xE9voilera-t-elle \xE0 vous. "
-  - speaker: 1
-    text: "Mais n'oubliez pas : la connaissance est un privil\xE8ge qui demande du
-      respect. Allez en paix, et veillez \xE0 ne pas troubler la qui\xE9tude que
-      je m'efforce de maintenir ici."
+    text: Hello
+  playOnlyOnce: 0
   rotationSpeed: 5
 --- !u!23 &777472379
 MeshRenderer:
@@ -4399,6 +4574,10 @@ MonoBehaviour:
   npcNameText: {fileID: 119041153}
   playerBubbleSprite: {fileID: 21300000, guid: cb1500d297b6c354891ecd3a7ddc79fd, type: 3}
   npcBubbleSprite: {fileID: 21300000, guid: d39ca44b0d825bd4bbee27575cc1cb68, type: 3}
+  counterDisplayObj: {fileID: 119273140}
+  counterText: {fileID: 119273142}
+  specialCharacter: {fileID: 1522680798}
+  targetMetCount: 2
   playerMovement: {fileID: 790108411}
 --- !u!1 &821030316
 GameObject:
@@ -4643,13 +4822,37 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 3849df4b0bacda14d9c962d48b8bfac4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 883846206}
   m_SourcePrefab: {fileID: 100100000, guid: 3849df4b0bacda14d9c962d48b8bfac4, type: 3}
 --- !u!4 &883846205 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 3849df4b0bacda14d9c962d48b8bfac4, type: 3}
   m_PrefabInstance: {fileID: 883846204}
   m_PrefabAsset: {fileID: 0}
+--- !u!65 &883846206
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 39219129}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.5496242, y: 4.3333335, z: 2.8673122}
+  m_Center: {x: -0.15455756, y: 1.6666667, z: 0}
 --- !u!1 &964046703
 GameObject:
   m_ObjectHideFlags: 0
@@ -5300,41 +5503,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96f4b8bb26f03a54ea4c6717cb38045f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  npcID: 
   npcName: Evys
-  conversation:
-  - speaker: 1
-    text: "Euh... Bonjour. Enfin, salut. Je... je voulais juste te parler du puits
-      canadien, si \xE7a t'int\xE9resse ?"
-  - speaker: 1
-    text: "C'est... c'est un gros ventilateur, en gros. \xC7a aspire l'air de dehors
-      pour \xE9quilibrer la temp\xE9rature. Comme \xE7a, pas besoin de clim. C'est...
-      c'est super, non ?"
-  - speaker: 1
-    text: Enfin, si tu veux en savoir plus, tu peux rester... mais seulement si tu
-      as le temps !
-  - speaker: 0
-    text: Oui, j'ai du temps. Raconte moi.
-  - speaker: 1
-    text: Tu... tu veux vraiment que je continue ? Certain ?
-  - speaker: 0
-    text: "Oui, s\xFBr !"
-  - speaker: 1
-    text: "Vraiment s\xFBr ? Pas juste pour \xEAtre poli ?"
-  - speaker: 0
-    text: "Non, je suis vraiment int\xE9ress\xE9."
-  - speaker: 1
-    text: "D'accord ! Alors, en fait, le principe repose sur l'inertie thermique
-      du sol pour pr\xE9traiter l'air neuf de renouvellement. "
-  - speaker: 1
-    text: "Tu vois, selon la saison, ce dispositif permet de modifier la temp\xE9rature
-      de l'air inject\xE9 dans le syst\xE8me de ventilation."
-  - speaker: 1
-    text: "C'est brillant parce qu'on r\xE9cup\xE8re des calories pr\xE9cieuses,
-      et totalement gratuites !\_ Ce qui permet d'avoir un chauffage et une ventilation
-      \xE0 tr\xE8s faible consommation \xE9nerg\xE9tique."
-  - speaker: 1
-    text: "On pourrait m\xEAme optimiser le flux en calculant... oh, pardon, je parle
-      trop, c'est \xE7a ? Je vais te laisser continuer ta visite."
+  conversation: []
+  playOnlyOnce: 0
   rotationSpeed: 5
 --- !u!1 &1114197309
 GameObject:
@@ -5878,13 +6050,37 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: af4603a606a1a444d95e503e982ba0b3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1166843065}
   m_SourcePrefab: {fileID: 100100000, guid: af4603a606a1a444d95e503e982ba0b3, type: 3}
 --- !u!4 &1166843064 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: af4603a606a1a444d95e503e982ba0b3, type: 3}
   m_PrefabInstance: {fileID: 1166843063}
   m_PrefabAsset: {fileID: 0}
+--- !u!65 &1166843065
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 156113056}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.8291296, y: 1.7440766, z: 1.5124573}
+  m_Center: {x: -0.14003372, y: 0.9130563, z: -0.04473734}
 --- !u!1 &1181888697
 GameObject:
   m_ObjectHideFlags: 0
@@ -6293,6 +6489,58 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mqtt: {fileID: 1972950052}
   sendValue: 3
+--- !u!1 &1272256609 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 3849df4b0bacda14d9c962d48b8bfac4, type: 3}
+  m_PrefabInstance: {fileID: 331206654}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1272256610
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1272256609}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.5496242, y: 4.3333335, z: 2.8673122}
+  m_Center: {x: -0.15455756, y: 1.6666667, z: 0}
+--- !u!1 &1286955868 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: af4603a606a1a444d95e503e982ba0b3, type: 3}
+  m_PrefabInstance: {fileID: 1831829234}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1286955869
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1286955868}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.8291296, y: 1.7440766, z: 1.5124573}
+  m_Center: {x: -0.14003372, y: 0.9130563, z: -0.04473734}
 --- !u!1 &1314735099
 GameObject:
   m_ObjectHideFlags: 0
@@ -6445,6 +6693,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 3e01808cd50ffcf4f8ac612c43dad84c, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1319577004}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 3e01808cd50ffcf4f8ac612c43dad84c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1319577008}
   m_SourcePrefab: {fileID: 100100000, guid: 3e01808cd50ffcf4f8ac612c43dad84c, type: 3}
 --- !u!4 &1319576998 stripped
 Transform:
@@ -6513,6 +6764,26 @@ MonoBehaviour:
   directionChoisie: 0
   liftDistance: 1
   liftSpeed: 0.5
+--- !u!114 &1319577008
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1319576999}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SerializedVersion: 0
+  m_OverrideArea: 1
+  m_Area: 0
+  m_OverrideGenerateLinks: 0
+  m_GenerateLinks: 0
+  m_IgnoreFromBuild: 0
+  m_ApplyToChildren: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &1343400656
 GameObject:
   m_ObjectHideFlags: 0
@@ -6706,6 +6977,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 3e01808cd50ffcf4f8ac612c43dad84c, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1372851372}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 3e01808cd50ffcf4f8ac612c43dad84c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1372851375}
   m_SourcePrefab: {fileID: 100100000, guid: 3e01808cd50ffcf4f8ac612c43dad84c, type: 3}
 --- !u!4 &1372851366 stripped
 Transform:
@@ -6774,6 +7048,26 @@ MonoBehaviour:
   directionChoisie: 1
   liftDistance: 1
   liftSpeed: 0.5
+--- !u!114 &1372851375
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1372851367}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SerializedVersion: 0
+  m_OverrideArea: 1
+  m_Area: 0
+  m_OverrideGenerateLinks: 0
+  m_GenerateLinks: 0
+  m_IgnoreFromBuild: 0
+  m_ApplyToChildren: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &1388774078
 GameObject:
   m_ObjectHideFlags: 0
@@ -6788,6 +7082,9 @@ GameObject:
   - component: {fileID: 1388774080}
   - component: {fileID: 1388774083}
   - component: {fileID: 1388774084}
+  - component: {fileID: 1388774085}
+  - component: {fileID: 1388774086}
+  - component: {fileID: 1388774087}
   m_Layer: 0
   m_Name: Maarith
   m_TagString: Untagged
@@ -6804,7 +7101,7 @@ Transform:
   m_GameObject: {fileID: 1388774078}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5, y: -9.369, z: -29}
+  m_LocalPosition: {x: 11, y: -9.369, z: -17}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6898,23 +7195,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96f4b8bb26f03a54ea4c6717cb38045f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  npcID: 2
   npcName: Maarith
   conversation:
-  - speaker: 1
-    text: "Oh, bienvenue ! Quel bonheur de vous voir ici. Suivez-moi, je vous en
-      prie ! Ce sera un immense plaisir pour moi d'\xEAtre votre guide et de vous
-      ouvrir les portes de notre humble foyer."
-  - speaker: 1
-    text: "Je vais vous pr\xE9senter mes fr\xE8res et s\u0153urs ; c'est une famille
-      un peu... particuli\xE8re, mais vous verrez, ils ont tous un c\u0153ur d'or
-      ! "
-  - speaker: 1
-    text: "Enfin, presque tous. Je ne suis pas certain que vous puissiez discuter
-      avec tout le monde. Certains sont... tr\xE8s difficiles \xE0 trouver. "
-  - speaker: 1
-    text: "Comme  Sylv. Ne perdez pas votre temps \xE0 le chercher. Sa pr\xE9sence
-      n'apporte rien \xE0 la visite, et son absence encore moins. Continuons, si
-      vous le voulez bien."
+  - speaker: 0
+    text: Hola
+  playOnlyOnce: 1
   rotationSpeed: 5
 --- !u!65 &1388774084
 BoxCollider:
@@ -6937,6 +7223,64 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 4.9921885, y: 2, z: 4.96875}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1388774085
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1388774078}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30a3da9489fe87f4d88fc854b72e0402, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerTransform: {fileID: 790108413}
+  stoppingDistance: 5
+  rotationSpeed: 5
+  isFollowing: 0
+--- !u!195 &1388774086
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1388774078}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 1
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
+--- !u!114 &1388774087
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1388774078}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e7f8fc6fec5dea43a57a47bee2b8dbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  guideName: Maarith
+  guideID: 2
+  silenceRequired: 5
+  reminders:
+  - targetNpcID: 1
+    reminderLines:
+    - speaker: 1
+      text: 'Va voir la bas '
 --- !u!1 &1435259449
 GameObject:
   m_ObjectHideFlags: 0
@@ -7147,37 +7491,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96f4b8bb26f03a54ea4c6717cb38045f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  npcID: 
   npcName: Mosshiro
-  conversation:
-  - speaker: 1
-    text: "Oh mon Dieu ! Pardonnez-moi... Je vous demande mille fois pardon, je n'avais
-      pas \xE9t\xE9 pr\xE9venu de votre venue, quelle erreur de ma part !  "
-  - speaker: 1
-    text: "Ma particularit\xE9 ? Oh, ce n'est rien du tout, je vous assure... Je
-      m'occupe des murs en terre crue, le pis\xE9. C'est... c'est tr\xE8s fragile,
-      je suis terriblement d\xE9sol\xE9."
-  - speaker: 1
-    text: "Ils se fissurent, ils s'effritent sous mes doigts, je passe mon temps
-      \xE0 essayer de les soigner, de les r\xE9parer... je suis si lent, pardon. "
-  - speaker: 1
-    text: "Pourtant, ils sont essentiels pour r\xE9guler la chaleur et l'humidit\xE9
-      ici, mais je crains de ne pas \xEAtre \xE0 la hauteur de la t\xE2che."
-  - speaker: 1
-    text: 'Et quand il pleut... oh, quelle catastrophe ! La pluie est si cruelle
-      avec la terre... '
-  - speaker: 1
-    text: "Mais regardez ! J'ai install\xE9 cette... cette \"casquette\". C'est un
-      grand d\xE9bord pour prot\xE9ger le sommet du mur. "
-  - speaker: 1
-    text: "Comme \xE7a, quand la pluie tombe, elle ne vient pas griffer la terre,
-      elle glisse plus loin. C'est une protection !"
-  - speaker: 1
-    text: "Oh, mais j'esp\xE8re que ce n'est pas trop moche ? Je suis d\xE9sol\xE9
-      si \xE7a g\xE2che la vue... je voulais juste que mes murs ne pleurent plus
-      quand le ciel se f\xE2che."
-  - speaker: 1
-    text: "C'est peut-\xEAtre un peu ridicule, une casquette sur un mur, non ? Pardon,
-      je vais essayer de la rendre plus jolie, je vous le promets !"
+  conversation: []
+  playOnlyOnce: 0
   rotationSpeed: 5
 --- !u!65 &1435824823
 BoxCollider:
@@ -7335,7 +7652,7 @@ Transform:
   m_GameObject: {fileID: 1522680798}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 22, y: -9.379, z: -32}
+  m_LocalPosition: {x: -5, y: -9.379, z: -14}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -7450,16 +7767,39 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96f4b8bb26f03a54ea4c6717cb38045f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  npcID: 
   npcName: Sylv
   conversation:
-  - speaker: 0
-    text: '  dzdz'
+  - speaker: 1
+    text: Salut toi
+  playOnlyOnce: 0
   rotationSpeed: 5
 --- !u!4 &1562617774 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 3849df4b0bacda14d9c962d48b8bfac4, type: 3}
   m_PrefabInstance: {fileID: 1968107788}
   m_PrefabAsset: {fileID: 0}
+--- !u!65 &1562617775
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 556068403}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.5496242, y: 4.3333335, z: 2.8673122}
+  m_Center: {x: -0.15455756, y: 1.6666667, z: 0}
 --- !u!1 &1578888169
 GameObject:
   m_ObjectHideFlags: 0
@@ -7691,39 +8031,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96f4b8bb26f03a54ea4c6717cb38045f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  npcID: 
   npcName: Yori
-  conversation:
-  - speaker: 1
-    text: "Ah ! Tu savais qu\u2019avant le b\xE2timent, tout \xE7a n\u2019existait
-      pas ? Enfin... je crois. L\u2019eau s\u2019infiltrait directement dans le sol,
-      c\u2019est \xE7a ? Oui, c\u2019est \xE7a ! Enfin, \xE0 70% s\xFBr... ou 60.
-      Bref ! "
-  - speaker: 1
-    text: "Regarde ces structures : c'est de l'alv\xE9olaire ultra-l\xE9ger. C\u2019est
-      fou, non ? Il me semble qu\u2019il y a... attends... quatre fonctions ? Ou
-      cinq ?"
-  - speaker: 1
-    text: "Ah non, non, non, c\u2019est six ! C\u2019est forc\xE9ment six. Alors,
-      on a... voyons... le recueil, le transport, le traitement... "
-  - speaker: 1
-    text: "Heu... la restitution... et... et les deux autres... Zut, \xE7a m'a \xE9chapp\xE9
-      ! Mais c'est pas grave, l'id\xE9e c'est que \xE7a \xE9vite les pollutions accidentelles."
-  - speaker: 1
-    text: "Enfin, c'est ce qu'on m'a dit, j'ai pas v\xE9rifi\xE9 les plans, mais
-      \xE7a a l'air logique, tu ne trouves pas ?"
-  - speaker: 1
-    text: "Oh, pars pas d\xE9j\xE0 ! Reste un peu, on est bien l\xE0, non ? On peut
-      discuter de plein d'autres trucs, j'ai des anecdotes sur tout !"
-  - speaker: 1
-    text: "Je peux m\xEAme te parler de moi, si tu veux ? D'ailleurs, je fais un
-      caf\xE9 incroyable. Vraiment. Ne touche surtout pas \xE0 celui d'Ignas, il
-      est imbuvable."
-  - speaker: 1
-    text: " Il te sert de la lave en fusion, ce type est incapable de doser quoi
-      que ce soit. Le mien ? Il est \xE0 la temp\xE9rature parfaite. Un d\xE9lice.
-      Tu restes, du coup ?"
-  - speaker: 0
-    text: Je vais continuer ma visite. Je reviendrai te voir plus tard !
+  conversation: []
+  playOnlyOnce: 0
   rotationSpeed: 5
 --- !u!65 &1594415992
 BoxCollider:
@@ -7817,6 +8128,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: ffbcd991393ffd04fa95adddeffd9680, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1605741454}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: ffbcd991393ffd04fa95adddeffd9680, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1605741456}
   m_SourcePrefab: {fileID: 100100000, guid: ffbcd991393ffd04fa95adddeffd9680, type: 3}
 --- !u!1 &1605741453 stripped
 GameObject:
@@ -7844,6 +8158,26 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: ffbcd991393ffd04fa95adddeffd9680, type: 3}
   m_PrefabInstance: {fileID: 1598875140}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1605741456
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1605741453}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SerializedVersion: 0
+  m_OverrideArea: 1
+  m_Area: 1
+  m_OverrideGenerateLinks: 0
+  m_GenerateLinks: 0
+  m_IgnoreFromBuild: 0
+  m_ApplyToChildren: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &1611451449
 GameObject:
   m_ObjectHideFlags: 0
@@ -8259,7 +8593,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 3849df4b0bacda14d9c962d48b8bfac4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1809178483}
   m_SourcePrefab: {fileID: 100100000, guid: 3849df4b0bacda14d9c962d48b8bfac4, type: 3}
 --- !u!1 &1686746132
 GameObject:
@@ -8690,6 +9027,32 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1783478779}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1809178482 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 3849df4b0bacda14d9c962d48b8bfac4, type: 3}
+  m_PrefabInstance: {fileID: 1661000121}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1809178483
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1809178482}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.5496242, y: 4.3333335, z: 2.8673122}
+  m_Center: {x: -0.15455756, y: 1.6666667, z: 0}
 --- !u!1 &1810091412
 GameObject:
   m_ObjectHideFlags: 0
@@ -8900,8 +9263,75 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: af4603a606a1a444d95e503e982ba0b3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1286955869}
   m_SourcePrefab: {fileID: 100100000, guid: af4603a606a1a444d95e503e982ba0b3, type: 3}
+--- !u!1 &1888998557
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1888998559}
+  - component: {fileID: 1888998558}
+  m_Layer: 0
+  m_Name: NavMesh Surface
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1888998558
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1888998557}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a5ac11cc976e418e8d13136b07e1f52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SerializedVersion: 0
+  m_AgentTypeID: 0
+  m_CollectObjects: 0
+  m_Size: {x: 10, y: 10, z: 10}
+  m_Center: {x: 0, y: 2, z: 0}
+  m_LayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_UseGeometry: 0
+  m_DefaultArea: 0
+  m_GenerateLinks: 0
+  m_IgnoreNavMeshAgent: 1
+  m_IgnoreNavMeshObstacle: 1
+  m_OverrideTileSize: 0
+  m_TileSize: 256
+  m_OverrideVoxelSize: 0
+  m_VoxelSize: 0.16666667
+  m_MinRegionArea: 2
+  m_NavMeshData: {fileID: 23800000, guid: a523aeaec3f8a4143bbac355c1d7c6a9, type: 2}
+  m_BuildHeightMesh: 0
+--- !u!4 &1888998559
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1888998557}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 8.473207, y: -15.76332, z: -27.268425}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1946256341
 GameObject:
   m_ObjectHideFlags: 0
@@ -9315,7 +9745,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 3849df4b0bacda14d9c962d48b8bfac4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1562617775}
   m_SourcePrefab: {fileID: 100100000, guid: 3849df4b0bacda14d9c962d48b8bfac4, type: 3}
 --- !u!1 &1972950050
 GameObject:
@@ -9551,29 +9984,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96f4b8bb26f03a54ea4c6717cb38045f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  npcID: 
   npcName: Ignas
-  conversation:
-  - speaker: 1
-    text: "Fait chaud ici, tu trouves pas ? On est \xE0 deux doigts de l'\xE9ruption...
-      Enfin, c\u2019est normal. On a dix-neuf sondes g\xE9othermiques enfonc\xE9es
-      dans le ventre de la terre. Dix-neuf."
-  - speaker: 1
-    text: " \xC7a fait une sacr\xE9e concentration de chaleur au m\xEAme endroit,
-      un vrai brasier souterrain. \r\nGr\xE2ce \xE0 \xE7a, on a un \xE9change thermique
-      impeccable dans tout le b\xE2timent."
-  - speaker: 1
-    text: "Et sans polluer le sol, en plus. On garde une conscience propre, m\xEAme
-      si on joue avec le feu. "
-  - speaker: 1
-    text: "Et ne va pas croire que c\u2019est ce... cette \xE9tincelle de Yori qui
-      a invent\xE9 la poudre. Ce type-l\xE0, c\u2019est une allumette mouill\xE9e
-      \xE0 c\xF4t\xE9 de moi."
-  - speaker: 1
-    text: "Moi, je suis un volcan, je br\xFBle de l'int\xE9rieur. C'est gr\xE2ce
-      \xE0 ma fureur que le caf\xE9 reste bouillant."
-  - speaker: 1
-    text: "Que le th\xE9 ne finit pas en gla\xE7on. Sans moi, tout ici serait d\xE9j\xE0
-      r\xE9duit en cendres... ou pire, \xE7a serait froid comme le c\u0153ur de Yori. "
+  conversation: []
+  playOnlyOnce: 0
   rotationSpeed: 5
 --- !u!1001 &2127256910
 PrefabInstance:
@@ -56234,6 +56648,7 @@ GameObject:
   - component: {fileID: 2701449881344474109}
   - component: {fileID: 903983861865474544}
   - component: {fileID: 9089733900221771834}
+  - component: {fileID: 9089733900221771835}
   m_Layer: 0
   m_Name: IfcSlab/DC_BA_Isol-007.010
   m_TagString: Untagged
@@ -67564,6 +67979,7 @@ GameObject:
   - component: {fileID: 121709297829029724}
   - component: {fileID: 228561394012459265}
   - component: {fileID: 6551716363622754641}
+  - component: {fileID: 6551716363622754642}
   m_Layer: 0
   m_Name: IfcSlab/TOITURE.009
   m_TagString: Untagged
@@ -89137,6 +89553,7 @@ GameObject:
   - component: {fileID: 419531317109396738}
   - component: {fileID: 831315481813781422}
   - component: {fileID: 7221255252072620899}
+  - component: {fileID: 7221255252072620900}
   m_Layer: 0
   m_Name: IfcSlab/TOITURE.008
   m_TagString: Untagged
@@ -97017,6 +97434,7 @@ GameObject:
   - component: {fileID: 3301618748586808876}
   - component: {fileID: 2955666114132237420}
   - component: {fileID: 7249927360139632713}
+  - component: {fileID: 7249927360139632714}
   m_Layer: 0
   m_Name: IfcSlab/TOITURE.010
   m_TagString: Untagged
@@ -127106,6 +127524,7 @@ GameObject:
   - component: {fileID: 1901888541937782698}
   - component: {fileID: 8561318160573854719}
   - component: {fileID: 7458422992380745567}
+  - component: {fileID: 8561318160573854720}
   m_Layer: 0
   m_Name: IfcSlab/DC_BA_Isol-008
   m_TagString: Untagged
@@ -128272,7 +128691,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!1 &3881568701241820489
 GameObject:
@@ -166616,6 +167035,7 @@ GameObject:
   - component: {fileID: 587677050275546609}
   - component: {fileID: 2496875917893082842}
   - component: {fileID: 5185684003478379502}
+  - component: {fileID: 5185684003478379503}
   m_Layer: 0
   m_Name: IfcSlab/TOITURE.004
   m_TagString: Untagged
@@ -166644,6 +167064,26 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.16596328, y: 0.10693915, z: 0.008410513}
   m_Center: {x: -0.068029225, y: 0.053469576, z: 0.0042052567}
+--- !u!114 &5185684003478379503
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5185684003478379501}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SerializedVersion: 0
+  m_OverrideArea: 1
+  m_Area: 1
+  m_OverrideGenerateLinks: 0
+  m_GenerateLinks: 0
+  m_IgnoreFromBuild: 0
+  m_ApplyToChildren: 1
+  m_AffectedAgents: ffffffff
 --- !u!4 &5186090641013897653
 Transform:
   m_ObjectHideFlags: 0
@@ -206762,6 +207202,26 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &6551716363622754642
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1824267582953281886}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SerializedVersion: 0
+  m_OverrideArea: 1
+  m_Area: 1
+  m_OverrideGenerateLinks: 0
+  m_GenerateLinks: 0
+  m_IgnoreFromBuild: 0
+  m_ApplyToChildren: 1
+  m_AffectedAgents: ffffffff
 --- !u!4 &6552029670676322736
 Transform:
   m_ObjectHideFlags: 0
@@ -210826,6 +211286,7 @@ GameObject:
   - component: {fileID: 5597355165119435796}
   - component: {fileID: 8297272649991356357}
   - component: {fileID: 538698602419119125}
+  - component: {fileID: 8297272649991356358}
   m_Layer: 0
   m_Name: IfcSlab/TOITURE.006
   m_TagString: Untagged
@@ -218244,6 +218705,7 @@ GameObject:
   - component: {fileID: 493751185656591058}
   - component: {fileID: 8009589490822699340}
   - component: {fileID: 1865348590197916768}
+  - component: {fileID: 8009589490822699341}
   m_Layer: 0
   m_Name: IfcSlab/TOITURE.007
   m_TagString: Untagged
@@ -227087,6 +227549,26 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &7221255252072620900
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2566275936492460527}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SerializedVersion: 0
+  m_OverrideArea: 1
+  m_Area: 1
+  m_OverrideGenerateLinks: 0
+  m_GenerateLinks: 0
+  m_IgnoreFromBuild: 0
+  m_ApplyToChildren: 1
+  m_AffectedAgents: ffffffff
 --- !u!33 &7221745497170969782
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -228034,6 +228516,26 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &7249927360139632714
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2821809284942714371}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SerializedVersion: 0
+  m_OverrideArea: 1
+  m_Area: 1
+  m_OverrideGenerateLinks: 0
+  m_GenerateLinks: 0
+  m_IgnoreFromBuild: 0
+  m_ApplyToChildren: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &7250612044574801266
 GameObject:
   m_ObjectHideFlags: 0
@@ -251103,6 +251605,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6932280811088789392}
   m_Mesh: {fileID: -8256375579205475599, guid: 079578ad30987ec40b0af38dcf0a712d, type: 3}
+--- !u!114 &8009589490822699341
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6932280811088789392}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SerializedVersion: 0
+  m_OverrideArea: 1
+  m_Area: 1
+  m_OverrideGenerateLinks: 0
+  m_GenerateLinks: 0
+  m_IgnoreFromBuild: 0
+  m_ApplyToChildren: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &8009669560404778267
 GameObject:
   m_ObjectHideFlags: 0
@@ -260001,6 +260523,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6692206522211513164}
   m_Mesh: {fileID: -3944691393483878398, guid: 079578ad30987ec40b0af38dcf0a712d, type: 3}
+--- !u!114 &8297272649991356358
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6692206522211513164}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SerializedVersion: 0
+  m_OverrideArea: 1
+  m_Area: 1
+  m_OverrideGenerateLinks: 0
+  m_GenerateLinks: 0
+  m_IgnoreFromBuild: 0
+  m_ApplyToChildren: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &8297648498473250080
 GameObject:
   m_ObjectHideFlags: 0
@@ -268325,6 +268867,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3838310983714183679}
   m_Mesh: {fileID: 7567139131944523124, guid: 079578ad30987ec40b0af38dcf0a712d, type: 3}
+--- !u!114 &8561318160573854720
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3838310983714183679}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SerializedVersion: 0
+  m_OverrideArea: 1
+  m_Area: 1
+  m_OverrideGenerateLinks: 0
+  m_GenerateLinks: 0
+  m_IgnoreFromBuild: 0
+  m_ApplyToChildren: 1
+  m_AffectedAgents: ffffffff
 --- !u!23 &8561549703382955229
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -285086,6 +285648,26 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &9089733900221771835
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1461551005666399039}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SerializedVersion: 0
+  m_OverrideArea: 1
+  m_Area: 1
+  m_OverrideGenerateLinks: 0
+  m_GenerateLinks: 0
+  m_IgnoreFromBuild: 0
+  m_ApplyToChildren: 1
+  m_AffectedAgents: ffffffff
 --- !u!33 &9091193147875156187
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -289063,3 +289645,4 @@ SceneRoots:
   - {fileID: 1118271968}
   - {fileID: 1143826984}
   - {fileID: 763972696}
+  - {fileID: 1888998559}

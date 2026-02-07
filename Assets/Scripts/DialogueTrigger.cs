@@ -3,8 +3,13 @@ using System.Collections;
 
 public class DialogueTrigger : MonoBehaviour
 {
-    public string npcName = "Guide";
+    public string npcID;
+    public string npcName;
     public DialogueLine[] conversation;
+
+    [Header("Réglages de répétition")]
+    public bool playOnlyOnce = false; // Option pour jouer une seule fois
+    private bool hasPlayed = false;   // Mémorise si déjà joué
 
     [Header("Réglages Rotation")]
     public float rotationSpeed = 5f;
@@ -24,6 +29,13 @@ public class DialogueTrigger : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            // --- LOGIQUE DE MÉMOIRE GLOBALE ---
+            if (playOnlyOnce && DialogueManager.Instance.HasMetNpc(npcID))
+            {
+                return; // On a déjà parlé à ce PNJ précis, on ignore.
+            }
+            // ----------------------------------
+
             playerTransform = other.transform;
             StartDialogue();
         }
@@ -40,6 +52,10 @@ public class DialogueTrigger : MonoBehaviour
     private void StartDialogue()
     {
         isChatting = true;
+        hasPlayed = true; // On marque comme joué dès le début du dialogue
+
+        // On enregistre ce PNJ dans le registre global
+        DialogueManager.Instance.MarkNpcAsMet(npcID);
 
         // 1. Arrêter la navigation
         if (agent != null)
@@ -51,7 +67,7 @@ public class DialogueTrigger : MonoBehaviour
         // 2. Arrêter l'animation (Passage en Idle)
         if (anim != null)
         {
-            anim.SetFloat("Speed", 0f); // Assure-toi que "Speed" est le nom du paramètre dans ton Animator
+            anim.SetFloat("Speed", 0f);
         }
 
         // 3. Lancer la rotation
@@ -66,33 +82,24 @@ public class DialogueTrigger : MonoBehaviour
         isChatting = false;
         DialogueManager.Instance.HideDialogue();
 
-        if (agent != null) agent.isStopped = false; // Relance le NavMesh
-        if (anim != null) anim.SetFloat("Speed", 1f); // Relance l'animation de marche
+        if (agent != null) agent.isStopped = false;
+        if (anim != null) anim.SetFloat("Speed", 1f);
     }
 
     private IEnumerator LookAtPlayer()
     {
         while (isChatting && playerTransform != null)
         {
-            // 1. On mémorise ton inclinaison X actuelle pour ne pas la perdre
             float originalX = transform.rotation.eulerAngles.x;
             float originalZ = transform.rotation.eulerAngles.z;
 
-            // 2. On définit le point cible à la même hauteur que le PNJ
             Vector3 targetPoint = new Vector3(playerTransform.position.x, transform.position.y, playerTransform.position.z);
-
             Vector3 direction = targetPoint - transform.position;
 
             if (direction.sqrMagnitude > 0.1f)
             {
-                // 3. On calcule la rotation vers le joueur
                 Quaternion targetRotation = Quaternion.LookRotation(direction);
-
-                // 4. On lisse la rotation
                 Quaternion newRotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime * rotationSpeed);
-
-                // 5. APPLICATION : On garde l'inclinaison X et Z d'origine
-                // On ne change QUE l'axe Y (la direction vers laquelle il fait face)
                 transform.rotation = Quaternion.Euler(originalX, newRotation.eulerAngles.y, originalZ);
             }
 
