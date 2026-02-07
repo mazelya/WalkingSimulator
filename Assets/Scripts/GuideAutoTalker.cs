@@ -20,7 +20,7 @@ public class GuideAutoTalker : MonoBehaviour
     public string guideID;
 
     [Header("Réglages du Timer")]
-    public float silenceRequired = 20f;
+    public float silenceRequired = 5f;
     private float timer = 0f;
 
     [Header("Liste des Rappels")]
