@@ -13,7 +13,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Gris
-    second: {fileID: 2100000, guid: fad7a49935e53a8438a5e5c3e97fd3c2, type: 2}
+    second: {fileID: 2100000, guid: 290888a8abc33e5429347ac731a82bcc, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule

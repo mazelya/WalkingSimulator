@@ -22,7 +22,7 @@ public class DialogueTrigger : MonoBehaviour
 
     [Header("Réglages de répétition")]
     public bool playOnlyOnce = false;
-    private bool hasPlayedDefault = false; // On mémorise si le texte par défaut a été dit
+    private bool hasPlayedDefault = false;
 
     [Header("Réglages Rotation")]
     public float rotationSpeed = 5f;
@@ -42,7 +42,6 @@ public class DialogueTrigger : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            // On ne bloque plus ici, on laisse StartDialogue décider
             playerTransform = other.transform;
             StartDialogue();
         }
@@ -52,7 +51,6 @@ public class DialogueTrigger : MonoBehaviour
     {
         DialogueLine[] conversationToPlay = null;
 
-        // 1. On cherche d'abord si une condition spéciale est remplie
         foreach (var cond in specializedDialogues)
         {
             if (DialogueManager.Instance.HasMetNpc(cond.requiredNpcID))
@@ -62,25 +60,29 @@ public class DialogueTrigger : MonoBehaviour
             }
         }
 
-        // 2. Si aucune condition n'est remplie, on gère le dialogue par défaut
         if (conversationToPlay == null)
         {
-            // Si on a déjà joué le dialogue par défaut ET que playOnlyOnce est coché : on stoppe.
-            if (playOnlyOnce && hasPlayedDefault)
-            {
-                return;
-            }
-
+            if (playOnlyOnce && hasPlayedDefault) return;
             conversationToPlay = defaultConversation;
-            hasPlayedDefault = true; // On marque que le texte par défaut a été utilisé
+            hasPlayedDefault = true;
         }
 
-        // 3. Lancement effectif du dialogue choisi
         isChatting = true;
         DialogueManager.Instance.MarkNpcAsMet(npcID);
 
-        if (agent != null) { agent.isStopped = true; agent.velocity = Vector3.zero; }
-        if (anim != null) anim.SetFloat("Speed", 0f);
+        // ARRÊT DU PNJ
+        if (agent != null)
+        {
+            agent.isStopped = true;
+            agent.velocity = Vector3.zero;
+            agent.updateRotation = false; // Désactive la rotation auto du NavMesh
+        }
+
+        // FORCE L'ANIMATION IDLE
+        if (anim != null)
+        {
+            anim.SetFloat("Speed", 0f);
+        }
 
         StopAllCoroutines();
         StartCoroutine(LookAtPlayer());
@@ -88,12 +90,52 @@ public class DialogueTrigger : MonoBehaviour
         DialogueManager.Instance.ShowDialogue(conversationToPlay, npcName);
     }
 
+    private void Update()
+    {
+        if (isChatting)
+        {
+            // 1. On vérifie si on clique pour passer au texte suivant
+            if (Input.GetMouseButtonDown(0))
+            {
+                DialogueManager.Instance.DisplayNextLine();
+            }
+
+            // 2. SÉCURITÉ : Si le DialogueManager a fermé la box (fin du texte), on libère le PNJ
+            // Cela permet de reprendre l'animation même si on est encore dans le collider
+            if (!DialogueManager.Instance.dialogueBox.activeSelf)
+            {
+                EndDialogue();
+            }
+        }
+    }
+
     private void EndDialogue()
     {
+        if (!isChatting) return; // Évite de répéter si déjà fini
+
         isChatting = false;
         DialogueManager.Instance.HideDialogue();
-        if (agent != null) agent.isStopped = false;
-        if (anim != null) anim.SetFloat("Speed", 1f);
+
+        // REPRISE DU PNJ
+        if (agent != null)
+        {
+            agent.isStopped = false;
+            agent.updateRotation = true;
+        }
+
+        // REPRISE DE L'ANIMATION PRINCIPALE (Marche)
+        if (anim != null)
+        {
+            anim.SetFloat("Speed", 1f);
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            EndDialogue();
+        }
     }
 
     private IEnumerator LookAtPlayer()
@@ -112,22 +154,6 @@ public class DialogueTrigger : MonoBehaviour
                 transform.rotation = Quaternion.Euler(originalX, newRotation.eulerAngles.y, originalZ);
             }
             yield return null;
-        }
-    }
-
-    private void Update()
-    {
-        if (isChatting && Input.GetMouseButtonDown(0))
-        {
-            DialogueManager.Instance.DisplayNextLine();
-        }
-    }
-
-    private void OnTriggerExit(Collider other)
-    {
-        if (other.CompareTag("Player"))
-        {
-            EndDialogue();
         }
     }
 }
