@@ -163,4 +163,10 @@ public class DialogueManager : MonoBehaviour
     {
         return npcsMet.Contains(npcID);
     }
+
+    // Permet aux autres scripts (comme la porte) de savoir combien de gens ont été vus
+    public int GetMetCount()
+    {
+        return npcsMet.Count;
+    }
 }
