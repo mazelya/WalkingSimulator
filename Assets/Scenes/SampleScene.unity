@@ -488,7 +488,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   VideoUrl: https://mazelya.github.io/VideoHost/PanneauSolaire.mp4
-  volume: 0.5
+  volume: 1
 --- !u!328 &66281025
 VideoPlayer:
   m_ObjectHideFlags: 0
@@ -514,7 +514,7 @@ VideoPlayer:
   m_TargetAudioSources:
   - {fileID: 0}
   m_DirectAudioVolumes:
-  - 0.476
+  - 1
   m_Url: 
   m_EnabledAudioTracks: 01
   m_DirectAudioMutes: 00
@@ -3446,7 +3446,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   VideoUrl: https://mazelya.github.io/VideoHost/Shed.mp4
-  volume: 0.5
+  volume: 1
 --- !u!328 &329572480
 VideoPlayer:
   m_ObjectHideFlags: 0
@@ -3472,7 +3472,7 @@ VideoPlayer:
   m_TargetAudioSources:
   - {fileID: 0}
   m_DirectAudioVolumes:
-  - 0.476
+  - 1
   m_Url: 
   m_EnabledAudioTracks: 01
   m_DirectAudioMutes: 00
@@ -7103,7 +7103,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   VideoUrl: https://mazelya.github.io/VideoHost/SondeGeothermique.mp4
-  volume: 0.5
+  volume: 1
 --- !u!328 &1011074401
 VideoPlayer:
   m_ObjectHideFlags: 0
@@ -7129,7 +7129,7 @@ VideoPlayer:
   m_TargetAudioSources:
   - {fileID: 0}
   m_DirectAudioVolumes:
-  - 0.476
+  - 1
   m_Url: 
   m_EnabledAudioTracks: 01
   m_DirectAudioMutes: 00
@@ -7172,7 +7172,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   VideoUrl: https://mazelya.github.io/VideoHost/PuitsCanadien.mp4
-  volume: 0.5
+  volume: 1
 --- !u!328 &1018567855
 VideoPlayer:
   m_ObjectHideFlags: 0
@@ -7198,7 +7198,7 @@ VideoPlayer:
   m_TargetAudioSources:
   - {fileID: 0}
   m_DirectAudioVolumes:
-  - 0.476
+  - 1
   m_Url: 
   m_EnabledAudioTracks: 01
   m_DirectAudioMutes: 00
@@ -9865,7 +9865,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   VideoUrl: https://mazelya.github.io/VideoHost/MurPise.mp4
-  volume: 0.5
+  volume: 1
 --- !u!328 &1443503924
 VideoPlayer:
   m_ObjectHideFlags: 0
@@ -9891,7 +9891,7 @@ VideoPlayer:
   m_TargetAudioSources:
   - {fileID: 0}
   m_DirectAudioVolumes:
-  - 0.476
+  - 1
   m_Url: 
   m_EnabledAudioTracks: 01
   m_DirectAudioMutes: 00
@@ -12608,7 +12608,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   VideoUrl: https://mazelya.github.io/VideoHost/MurOssatureBois.mp4
-  volume: 0.5
+  volume: 1
 --- !u!328 &1824049185
 VideoPlayer:
   m_ObjectHideFlags: 0
@@ -12634,7 +12634,7 @@ VideoPlayer:
   m_TargetAudioSources:
   - {fileID: 0}
   m_DirectAudioVolumes:
-  - 0.476
+  - 1
   m_Url: 
   m_EnabledAudioTracks: 01
   m_DirectAudioMutes: 00
