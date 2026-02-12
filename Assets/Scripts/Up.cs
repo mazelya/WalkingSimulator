@@ -3,39 +3,53 @@ using UnityEngine;
 public class Up : MonoBehaviour
 {
     [Header("Réglages de l'Ascenseur")]
-    public float liftDistance = 5f; // Distance entre le bas et le haut
-    public float liftSpeed = 3f;    // Vitesse de déplacement
+    public float liftDistance = 5f;
+    public float liftSpeed = 3f;
+
+    [Header("Émetteurs Audio (3D)")]
+    [Tooltip("Glisser ici l'objet contenant l'AudioSource du décollage")]
+    public AudioSource sourceTakeoff;  // L'émetteur pour la montée
+
+    [Tooltip("Glisser ici l'objet contenant l'AudioSource du stationnaire")]
+    public AudioSource sourceHover;    // L'émetteur pour le haut
+
+    [Tooltip("Glisser ici l'objet contenant l'AudioSource de l'atterrissage")]
+    public AudioSource sourceLanding;  // L'émetteur pour la descente
 
     private Vector3 startPosition;
     private Vector3 endPosition;
     private Vector3 targetPosition;
 
     private bool isMoving = false;
-    private bool isAtTop = false; // Permet de savoir si l'ascenseur est en haut ou en bas
+    private bool isAtTop = false;
 
     private void Awake()
     {
-        // On initialise les deux positions possibles
         startPosition = transform.position;
         endPosition = transform.position + Vector3.up * liftDistance;
-
-        // Au début, l'ascenseur est en bas, donc la première cible sera le haut
         targetPosition = endPosition;
+
+        // Sécurité : on s'assure que tout est coupé au lancement du jeu
+        StopAllSounds();
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        // On ne déclenche le mouvement que si le joueur entre et que l'ascenseur est immobile
         if (other.CompareTag("Player") && !isMoving)
         {
-            // On détermine la nouvelle cible selon la position actuelle
             if (isAtTop)
             {
-                targetPosition = startPosition; // On redescend
+                // CAS 1 : Descente
+                targetPosition = startPosition;
+                // On active l'émetteur "Atterrissage"
+                SwitchToAudioSource(sourceLanding);
             }
             else
             {
-                targetPosition = endPosition; // On monte
+                // CAS 2 : Montée
+                targetPosition = endPosition;
+                // On active l'émetteur "Décollage"
+                SwitchToAudioSource(sourceTakeoff);
             }
 
             isMoving = true;
@@ -46,20 +60,59 @@ public class Up : MonoBehaviour
     {
         if (isMoving)
         {
-            // Déplacement fluide vers la cible
             transform.position = Vector3.MoveTowards(
                 transform.position,
                 targetPosition,
                 liftSpeed * Time.deltaTime
             );
 
-            // Vérification si la destination est atteinte
+            // Vérification de l'arrivée (avec une marge très fine)
             if (Vector3.Distance(transform.position, targetPosition) < 0.001f)
             {
                 isMoving = false;
-                // On inverse l'état pour le prochain passage
                 isAtTop = !isAtTop;
+
+                // GESTION DES ÉTATS SONORES À L'ARRIVÉE
+                if (isAtTop)
+                {
+                    // Arrivé EN HAUT -> On passe au bruit stationnaire
+                    SwitchToAudioSource(sourceHover);
+                }
+                else
+                {
+                    // Arrivé EN BAS -> On coupe tout
+                    StopAllSounds();
+                }
             }
         }
+    }
+
+    // --- Gestion des Audio Sources Multiples ---
+
+    /// <summary>
+    /// Active l'AudioSource demandé et coupe tous les autres.
+    /// </summary>
+    private void SwitchToAudioSource(AudioSource activeSource)
+    {
+        // 1. On arrête les autres sons pour éviter la cacophonie
+        if (sourceTakeoff != activeSource) sourceTakeoff.Stop();
+        if (sourceHover != activeSource) sourceHover.Stop();
+        if (sourceLanding != activeSource) sourceLanding.Stop();
+
+        // 2. On lance le son désiré s'il n'est pas déjà en train de jouer
+        if (activeSource != null && !activeSource.isPlaying)
+        {
+            activeSource.Play();
+        }
+    }
+
+    /// <summary>
+    /// Arrête tous les sons du drone.
+    /// </summary>
+    private void StopAllSounds()
+    {
+        if (sourceTakeoff != null) sourceTakeoff.Stop();
+        if (sourceHover != null) sourceHover.Stop();
+        if (sourceLanding != null) sourceLanding.Stop();
     }
 }

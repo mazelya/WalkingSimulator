@@ -27,6 +27,11 @@ public class DialogueTrigger : MonoBehaviour
     [Header("Réglages Rotation")]
     public float rotationSpeed = 5f;
 
+    [Header("Audio")]
+    public AudioClip dialogueVoice; // GLISSE TA MUSIQUE/GIBBERISH ICI
+    [Range(0f, 1f)] public float volume = 1f; // Règle le volume ici
+    private AudioSource audioSource;
+
     private bool isChatting = false;
     private UnityEngine.AI.NavMeshAgent agent;
     private Transform playerTransform;
@@ -36,6 +41,17 @@ public class DialogueTrigger : MonoBehaviour
     {
         agent = GetComponent<UnityEngine.AI.NavMeshAgent>();
         anim = GetComponent<Animator>();
+
+        // --- AJOUT AUDIO ---
+        // On récupère ou on crée l'AudioSource automatiquement
+        audioSource = GetComponent<AudioSource>();
+        if (audioSource == null)
+        {
+            audioSource = gameObject.AddComponent<AudioSource>();
+        }
+        audioSource.playOnAwake = false; // On empêche le son de se lancer au démarrage du jeu
+        audioSource.loop = true; // On met en boucle pour faire un effet de parole continue
+        audioSource.spatialBlend = 1.0f; // 1.0 = Son 3D (vient du NPC), 0.0 = Son 2D (dans la tête)
     }
 
     private void OnTriggerEnter(Collider other)
@@ -69,6 +85,14 @@ public class DialogueTrigger : MonoBehaviour
 
         isChatting = true;
         DialogueManager.Instance.MarkNpcAsMet(npcID);
+
+        // --- LANCEMENT AUDIO ---
+        if (dialogueVoice != null && audioSource != null)
+        {
+            audioSource.clip = dialogueVoice;
+            audioSource.volume = volume;
+            audioSource.Play();
+        }
 
         // ARRÊT DU PNJ
         if (agent != null)
@@ -112,6 +136,12 @@ public class DialogueTrigger : MonoBehaviour
     private void EndDialogue()
     {
         if (!isChatting) return; // Évite de répéter si déjà fini
+
+        // --- ARRÊT AUDIO ---
+        if (audioSource != null && audioSource.isPlaying)
+        {
+            audioSource.Stop();
+        }
 
         isChatting = false;
         DialogueManager.Instance.HideDialogue();
