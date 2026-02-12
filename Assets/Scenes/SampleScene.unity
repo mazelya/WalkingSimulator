@@ -1392,6 +1392,22 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 3.9500003
       objectReference: {fileID: 0}
+    - target: {fileID: -6606351363064764115, guid: 09b347602d92ef842817ed68ebfe5cd4, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2.2306
+      objectReference: {fileID: 0}
+    - target: {fileID: -6606351363064764115, guid: 09b347602d92ef842817ed68ebfe5cd4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.0081
+      objectReference: {fileID: 0}
+    - target: {fileID: -6480660617288984652, guid: 09b347602d92ef842817ed68ebfe5cd4, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2.2306
+      objectReference: {fileID: 0}
+    - target: {fileID: -6480660617288984652, guid: 09b347602d92ef842817ed68ebfe5cd4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.0081
+      objectReference: {fileID: 0}
     - target: {fileID: -6125592227949032329, guid: 09b347602d92ef842817ed68ebfe5cd4, type: 3}
       propertyPath: m_LocalScale.z
       value: 1.1616
@@ -1407,6 +1423,22 @@ PrefabInstance:
     - target: {fileID: -5982159176016168994, guid: 09b347602d92ef842817ed68ebfe5cd4, type: 3}
       propertyPath: m_LocalPosition.y
       value: -0.027636
+      objectReference: {fileID: 0}
+    - target: {fileID: -5747902549864955888, guid: 09b347602d92ef842817ed68ebfe5cd4, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2.2306
+      objectReference: {fileID: 0}
+    - target: {fileID: -5747902549864955888, guid: 09b347602d92ef842817ed68ebfe5cd4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 142.83
+      objectReference: {fileID: 0}
+    - target: {fileID: -5747902549864955888, guid: 09b347602d92ef842817ed68ebfe5cd4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.0081
+      objectReference: {fileID: 0}
+    - target: {fileID: -5747902549864955888, guid: 09b347602d92ef842817ed68ebfe5cd4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 136.375
       objectReference: {fileID: 0}
     - target: {fileID: -5616118937029671415, guid: 09b347602d92ef842817ed68ebfe5cd4, type: 3}
       propertyPath: m_Name
@@ -1444,6 +1476,22 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 52.726
       objectReference: {fileID: 0}
+    - target: {fileID: -2649054233119088364, guid: 09b347602d92ef842817ed68ebfe5cd4, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2.1705687
+      objectReference: {fileID: 0}
+    - target: {fileID: -2649054233119088364, guid: 09b347602d92ef842817ed68ebfe5cd4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 145.827
+      objectReference: {fileID: 0}
+    - target: {fileID: -2649054233119088364, guid: 09b347602d92ef842817ed68ebfe5cd4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.0051
+      objectReference: {fileID: 0}
+    - target: {fileID: -2649054233119088364, guid: 09b347602d92ef842817ed68ebfe5cd4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 136.245
+      objectReference: {fileID: 0}
     - target: {fileID: -2526815278241843056, guid: 09b347602d92ef842817ed68ebfe5cd4, type: 3}
       propertyPath: m_Name
       value: Porte
@@ -1455,6 +1503,10 @@ PrefabInstance:
     - target: {fileID: -1535194674805217546, guid: 09b347602d92ef842817ed68ebfe5cd4, type: 3}
       propertyPath: m_Name
       value: PorteG
+      objectReference: {fileID: 0}
+    - target: {fileID: -928178475899020904, guid: 09b347602d92ef842817ed68ebfe5cd4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.22
       objectReference: {fileID: 0}
     - target: {fileID: -991384502468353, guid: 09b347602d92ef842817ed68ebfe5cd4, type: 3}
       propertyPath: m_LocalScale.z
@@ -1524,6 +1576,14 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -0.027636
       objectReference: {fileID: 0}
+    - target: {fileID: 8106280654224837993, guid: 09b347602d92ef842817ed68ebfe5cd4, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2.2306
+      objectReference: {fileID: 0}
+    - target: {fileID: 8106280654224837993, guid: 09b347602d92ef842817ed68ebfe5cd4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.0081
+      objectReference: {fileID: 0}
     - target: {fileID: 8277169821970111501, guid: 09b347602d92ef842817ed68ebfe5cd4, type: 3}
       propertyPath: m_LocalScale.z
       value: 1.2019
@@ -1539,6 +1599,14 @@ PrefabInstance:
     - target: {fileID: 8680706022753722125, guid: 09b347602d92ef842817ed68ebfe5cd4, type: 3}
       propertyPath: m_LocalPosition.z
       value: 53.379
+      objectReference: {fileID: 0}
+    - target: {fileID: 8681728037039192445, guid: 09b347602d92ef842817ed68ebfe5cd4, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2.2306
+      objectReference: {fileID: 0}
+    - target: {fileID: 8681728037039192445, guid: 09b347602d92ef842817ed68ebfe5cd4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.0081
       objectReference: {fileID: 0}
     - target: {fileID: 9169006425358678506, guid: 09b347602d92ef842817ed68ebfe5cd4, type: 3}
       propertyPath: m_LocalPosition.y
@@ -5410,7 +5478,7 @@ MonoBehaviour:
   - speaker: 0
     text: "Non, je vais continuer ma visite. Je reviendrai, peut-\xEAtre plus tard."
   specializedDialogues: []
-  playOnlyOnce: 0
+  playOnlyOnce: 1
   rotationSpeed: 5
 --- !u!65 &669056455
 BoxCollider:
@@ -5511,7 +5579,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 614c959ea2f79034781992d3f4f7b018, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.04
+  m_Volume: 0.02
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -5904,7 +5972,7 @@ MonoBehaviour:
       text: "Le pardon est une racine qui permet \xE0 l'arbre de grandir malgr\xE9
         la temp\xEAte. Retiens bien cela : la faute est humaine, mais le silence
         est parfois la plus grande des sagesses."
-  playOnlyOnce: 0
+  playOnlyOnce: 1
   rotationSpeed: 5
 --- !u!65 &734554718
 BoxCollider:
@@ -6773,7 +6841,7 @@ MonoBehaviour:
     text: "Et il ne sera pas gentil avec moi. Je ne suis pas dou\xE9 pour les secrets,
       moi... tu me promets de te taire ? "
   specializedDialogues: []
-  playOnlyOnce: 0
+  playOnlyOnce: 1
   rotationSpeed: 5
 --- !u!95 &828646241
 Animator:
@@ -10484,7 +10552,7 @@ MonoBehaviour:
   - speaker: 1
     text: "Bon, j'y vais, j'ai un toit \xE0 massacrer"
   specializedDialogues: []
-  playOnlyOnce: 0
+  playOnlyOnce: 1
   rotationSpeed: 5
 --- !u!65 &1466919399
 BoxCollider:
@@ -11287,7 +11355,7 @@ MonoBehaviour:
   - speaker: 1
     text: "Oh, pardon, je parle trop, c'est \xE7a ? Je te laisse continuer ta balade."
   specializedDialogues: []
-  playOnlyOnce: 0
+  playOnlyOnce: 1
   rotationSpeed: 5
 --- !u!95 &1610055100
 Animator:
@@ -11818,7 +11886,7 @@ MonoBehaviour:
     text: "Sans moi, tout ici serait d\xE9j\xE0 r\xE9duit en cendres... ou pire,
       \xE7a serait froid comme le c\u0153ur de Yori. "
   specializedDialogues: []
-  playOnlyOnce: 0
+  playOnlyOnce: 1
   rotationSpeed: 5
 --- !u!4 &1652743377 stripped
 Transform:
@@ -11943,7 +12011,7 @@ MonoBehaviour:
     text: "C'est peut-\xEAtre un peu ridicule, une casquette sur un mur, non ? Pardon,
       je vais essayer de la rendre plus jolie, je vous le promets !"
   specializedDialogues: []
-  playOnlyOnce: 0
+  playOnlyOnce: 1
   rotationSpeed: 5
 --- !u!1 &1658795574 stripped
 GameObject:
@@ -15036,7 +15104,7 @@ MonoBehaviour:
     text: "Je laisse le monde croire que je suis le coupable, car c'est le prix \xE0
       payer pour que mon fr\xE8re puisse sourire \xE0 nouveau en vous guidant."
   specializedDialogues: []
-  playOnlyOnce: 0
+  playOnlyOnce: 1
   rotationSpeed: 5
 --- !u!1 &2097178457 stripped
 GameObject:
