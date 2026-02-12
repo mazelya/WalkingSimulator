@@ -6207,7 +6207,7 @@ MonoBehaviour:
   npcBubbleSprite: {fileID: 21300000, guid: d39ca44b0d825bd4bbee27575cc1cb68, type: 3}
   counterDisplayObj: {fileID: 119273140}
   counterText: {fileID: 119273142}
-  specialCharacter: {fileID: 0}
+  specialCharacter: {fileID: 2092496860}
   targetMetCount: 9
   playerMovement: {fileID: 790108411}
 --- !u!1 &794528391
