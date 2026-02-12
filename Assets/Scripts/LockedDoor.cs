@@ -3,12 +3,18 @@ using UnityEngine;
 public class LockedDoor : MonoBehaviour
 {
     [Header("Réglages de la rotation")]
-    [Tooltip("L'angle d'ouverture (ex: 90 ou -90)")]
     public float openAngle = 90f;
     public float rotationSpeed = 3f;
 
     [Header("Condition de déblocage")]
     public int requiredPeopleCount = 9;
+
+    [Header("Audio")]
+    [Tooltip("Le son qui se joue quand la porte s'ouvre")]
+    public AudioClip openSound;
+    [Range(0f, 1f)] public float volume = 1f;
+    private AudioSource audioSource;
+    private bool hasPlayedSound = false; // Pour ne pas rejouer le son en boucle
 
     private Quaternion closedRotation;
     private Quaternion openRotation;
@@ -17,14 +23,18 @@ public class LockedDoor : MonoBehaviour
 
     private void Awake()
     {
-        // 1. On mémorise la rotation de départ
         closedRotation = transform.rotation;
-
-        // 2. On utilise Vector3.up (l'axe vertical absolu du monde) 
-        // pour être sûr que la porte ne "tombe" pas vers l'avant.
         openRotation = Quaternion.AngleAxis(openAngle, Vector3.up) * closedRotation;
-
         targetRotation = closedRotation;
+
+        // Configuration automatique de l'AudioSource
+        audioSource = GetComponent<AudioSource>();
+        if (audioSource == null)
+        {
+            audioSource = gameObject.AddComponent<AudioSource>();
+        }
+        audioSource.playOnAwake = false;
+        audioSource.spatialBlend = 1.0f; // Son 3D
     }
 
     private void OnTriggerEnter(Collider other)
@@ -35,6 +45,13 @@ public class LockedDoor : MonoBehaviour
             {
                 targetRotation = openRotation;
                 isMoving = true;
+
+                // --- JOUER LE SON ---
+                if (openSound != null && !hasPlayedSound)
+                {
+                    audioSource.PlayOneShot(openSound, volume);
+                    hasPlayedSound = true; // On marque comme joué pour cette ouverture
+                }
             }
             else
             {
@@ -49,6 +66,7 @@ public class LockedDoor : MonoBehaviour
         {
             targetRotation = closedRotation;
             isMoving = true;
+            hasPlayedSound = false; // On réinitialise pour que ça rejoue au prochain passage si besoin
         }
     }
 

@@ -45,6 +45,9 @@ public class DialogueManager : MonoBehaviour
     public GameObject specialCharacter; // Glisse ici le personnage qui doit apparaître
     public int targetMetCount = 9;      // Le nombre cible (9 dans ton cas)
 
+    [Header("Vidéo")]
+    public bool isVideoPlaying = false; // À passer à true quand tu lances une vidéo
+
     public FirstPersonController playerMovement;
 
     private DialogueLine[] currentLines;
@@ -113,23 +116,28 @@ public class DialogueManager : MonoBehaviour
 
     public void MarkNpcAsMet(string npcID)
     {
-        // On ne compte que les nouveaux PNJ (et on ignore les ID techniques avec "_")
-        if (!npcsMet.Contains(npcID) && !npcID.Contains("_"))
+        // 1. On vérifie si l'ID contient un "_" (ID technique pour les rappels ou conditions)
+        // On ne veut pas que "ReminderSent_Bob" augmente le compteur de 10.
+        bool isTechnicalID = npcID.Contains("_");
+
+        if (!npcsMet.Contains(npcID))
         {
             npcsMet.Add(npcID);
-            Debug.Log("PNJ mémorisé : " + npcID + " | Total : " + npcsMet.Count);
 
-            UpdateAndShowCounter();
-
-            // --- NOUVELLE LOGIQUE : APPARITION ---
-            if (npcsMet.Count >= targetMetCount)
+            // 2. ON NE COMPTE QUE SI :
+            // - Ce n'est pas un ID technique (pas de "_")
+            // - ET ce n'est pas un ID de rappel
+            if (!isTechnicalID)
             {
-                SpawnSpecialCharacter();
+                Debug.Log("Nouveau PNJ unique rencontré : " + npcID);
+                UpdateAndShowCounter();
+
+                // Vérification apparition personnage final
+                if (npcsMet.Count >= targetMetCount)
+                {
+                    SpawnSpecialCharacter();
+                }
             }
-        }
-        else if (!npcsMet.Contains(npcID))
-        {
-            npcsMet.Add(npcID);
         }
     }
 

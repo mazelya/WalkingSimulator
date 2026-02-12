@@ -51,7 +51,8 @@ public class GuideAutoTalker : MonoBehaviour
         }
 
         // 2. GESTION DU TIMER
-        if (DialogueManager.Instance.dialogueBox.activeSelf)
+        // Le timer se remet à zéro si : la box est active OU si une vidéo joue
+        if (DialogueManager.Instance.dialogueBox.activeSelf || DialogueManager.Instance.isVideoPlaying)
         {
             timer = 0f;
             return;

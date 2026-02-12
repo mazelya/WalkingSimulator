@@ -5,7 +5,7 @@ public class VidPlayer : MonoBehaviour
 {
     [SerializeField] private string VideoUrl = "https://mazelya.github.io/VideoHostPortfolio/MarioKart.mp4";
     [Range(0f, 1f)]
-    public float volume = 1f; // Permet de régler le son dans l'inspecteur
+    public float volume = 1f;
 
     private VideoPlayer videoPlayer;
     private bool videoPrepared = false;
@@ -18,7 +18,6 @@ public class VidPlayer : MonoBehaviour
             videoPlayer.url = VideoUrl;
             videoPlayer.playOnAwake = false;
 
-            // Assurez-vous que la vidéo utilise un AudioSource
             videoPlayer.audioOutputMode = VideoAudioOutputMode.AudioSource;
             if (!videoPlayer.GetComponent<AudioSource>())
             {
@@ -34,14 +33,18 @@ public class VidPlayer : MonoBehaviour
 
     private void OnVideoPrepared(VideoPlayer source)
     {
-        videoPrepared = true; // La vidéo est prête mais ne se joue pas encore
+        videoPrepared = true;
     }
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player") && videoPrepared)
         {
-            videoPlayer.Play(); // Joue la vidéo quand le joueur entre
+            videoPlayer.Play();
+
+            // --- BLOQUE LE GUIDE ---
+            if (DialogueManager.Instance != null)
+                DialogueManager.Instance.isVideoPlaying = true;
         }
     }
 
@@ -49,13 +52,16 @@ public class VidPlayer : MonoBehaviour
     {
         if (other.CompareTag("Player") && videoPrepared)
         {
-            videoPlayer.Pause(); // Arrête la vidéo quand le joueur sort
+            videoPlayer.Pause();
+
+            // --- LIBÈRE LE GUIDE ---
+            if (DialogueManager.Instance != null)
+                DialogueManager.Instance.isVideoPlaying = false;
         }
     }
 
     private void Update()
     {
-        // Met à jour le volume en temps réel si besoin
         if (videoPlayer && videoPlayer.GetTargetAudioSource(0))
         {
             videoPlayer.GetTargetAudioSource(0).volume = volume;
