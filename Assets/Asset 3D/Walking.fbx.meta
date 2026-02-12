@@ -63,8 +63,13 @@ ModelImporter:
   meshes:
     lODScreenPercentages: []
 <<<<<<< Updated upstream:Assets/Asset 3D/Walking.fbx.meta
+<<<<<<< Updated upstream:Assets/Asset 3D/Walking.fbx.meta
     globalScale: 1000
     meshCompression: 0
+=======
+    globalScale: 200
+    meshCompression: 3
+>>>>>>> Stashed changes:Assets/GCCD/Meshes/Character/Sylv/Sylv_idle.fbx.meta
 =======
     globalScale: 200
     meshCompression: 3
