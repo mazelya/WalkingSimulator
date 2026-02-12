@@ -5279,7 +5279,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f8fbe3ca7fb8eca4ea26797f21c1e857, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -8.88
+      value: -11
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f8fbe3ca7fb8eca4ea26797f21c1e857, type: 3}
       propertyPath: m_LocalPosition.z
@@ -6274,10 +6274,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 247984290}
     m_Modifications:
-    - target: {fileID: -8759526173511082553, guid: b4a45f8a6e009bf449a9d9ec8455ecf9, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 6.6166143
-      objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1151bc132a6dfbe4f8914c61d3e01284, type: 3}
       propertyPath: m_LocalPosition.x
       value: 30.154417
@@ -6321,6 +6317,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1151bc132a6dfbe4f8914c61d3e01284, type: 3}
       propertyPath: m_Name
       value: Ignas
+      objectReference: {fileID: 0}
+    - target: {fileID: -8759526173511082553, guid: b4a45f8a6e009bf449a9d9ec8455ecf9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 6.6166143
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
